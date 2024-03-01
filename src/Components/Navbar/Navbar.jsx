@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container">
         <Link to="/home" className="navbar-brand">
-          <img src={logo} alt="fresh cart logo" />
+        <i _ngcontent-enk-c20="" class="fa-solid fa-cart-shopping nav-icon"></i><span _ngcontent-enk-c20="" class="h3 bold">fresh cart</span>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -45,13 +45,8 @@ export default function Navbar() {
           </ul>}
 
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item d-flex align-items-center">
-              <i className='fab mx-2 fa-facebook'></i>
-              <i className='fab mx-2 fa-twitter'></i>
-              <i className='fab mx-2 fa-instagram'></i>
-              <i className='fab mx-2 fa-youtube'></i>
-              <i className='fab mx-2 fa-tiktok'></i>
-            </li>
+           
+           
             {isUserLoggedIn ?
               <li className="nav-item">
                 <span onClick={logout} className="nav-link cursor-pointer">Logout</span>
